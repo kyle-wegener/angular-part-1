@@ -1,0 +1,21 @@
+<div>
+    <p>Select a pet you would like to add to the list?</p>
+    <label><input #catRadioButton (click)='true' type="radio" name="pet_type" value="cat" />Cat</label>
+    <label><input #dogRadioButton (click)='true' type="radio" name="pet_type" value="dog" />Dog</label>
+    <div *ngIf="catRadioButton.checked">
+        <h5>Cats</h5>
+        <ol>
+            <li *ngFor="let cat of availableCats">{{cat}}</li>
+        </ol>
+        <input #catName name="cat_choice" id="cat_choice" />
+        <button (click)="addPet('cat', catName.value);catName.value = ''">Add</button>
+    </div>
+    <div *ngIf="dogRadioButton.checked">
+        <h5>Dogs</h5>
+        <ol>
+            <li *ngFor="let dog of availableDogs">{{dog}}</li>
+        </ol>
+        <input #dogName name="cat_choice" id="cat_choice" />
+        <button (click)="addPet('dog', dogName.value); dogName.value = ''">Add</button>
+    </div>
+</div>

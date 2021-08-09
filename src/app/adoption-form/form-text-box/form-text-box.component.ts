@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FormTextBoxComponent implements OnInit {
 
-  @Input() name: string;
+  @Input() myDisplay: string;
+  @Input() myName: string;
 
   constructor() { }
 

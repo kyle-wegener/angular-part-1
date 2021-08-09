@@ -1,34 +1,13 @@
 <div>
-    <h3>The Form</h3>
+    <h3>Please fill out the form below</h3>
     <form action="" method="GET">
-        <!--<div class='container'>
-            <div class='inline'>
-                <div>First Name:</div>
-                <input type="text" id="first_name" name="first_name"/>
-            </div>
-            <div class='inline'>
-                <div>Last Name:</div>
-                <input type="text" id="last_name" name="last_name"/>
-            </div>
+        <div class='container' style="margin-top: 30px;">
+            <app-form-text-box myDisplay="First Name" myName="first_name"></app-form-text-box>
+            <app-form-text-box myDisplay="Last Name" myName="last_name"></app-form-text-box>
         </div>
         <div class='container'>
-            <div class='inline'>
-                <div>Email:</div>
-                <input type="text" id="email" name="email"/>
-            </div>
-            <div class='inline'>
-                <div>Phone #:</div>
-                <input type="text" id="phone" name="phone"/>
-            </div>
-            
-        </div> -->
-        <div class='container'>
-            <app-form-text-box name="first_name"></app-form-text-box>
-            <app-form-text-box></app-form-text-box>
-        </div>
-        <div class='container'>
-            <app-form-text-box></app-form-text-box>
-            <app-form-text-box></app-form-text-box>
+            <app-form-text-box myDisplay="Email" myName="email"></app-form-text-box>
+            <app-form-text-box myDisplay="Phone #" myName="phone_number"></app-form-text-box>
         </div>
         <input type="submit" value="Submit" />
     </form>
